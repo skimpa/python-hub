@@ -1,3 +1,6 @@
+# note... this file is actually called ipmon.py, i changed its name to dynip.py for git 
+# dynip.py is just ipmon.py with all passwords and sensitive data removed
+
 #!/usr/bin/python3
 #
 # ipmon.py
@@ -42,6 +45,8 @@ def main():
     dynip = re.search(r'\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}', messydynip).group(0)
     
     # check if the new IP address has changed
+    # file dynip.txt will have to be created manually prior to running this program 
+    # $ cd /root/dynip -- then -- $ touch dynip.txt
     f = open("/root/dynip/dynip.txt", "r")
     read_ip = f.read()
     f.close()
