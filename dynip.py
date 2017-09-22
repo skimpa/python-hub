@@ -38,7 +38,7 @@ def main():
     # RegEx the formatting characters out of the string
     # messydate is in format  b'Sat  2 Sep 16:00:01 BST 2017\n'
     # messydynip is in format b'2.123.89.12\n'
-    date = re.search(r'[A-Z].*2017', messydate).group(0)
+    date = re.search(r'[A-Z].*\d{4}', messydate).group(0)
     dynip = re.search(r'\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}', messydynip).group(0)
     
     # check if the new IP address has changed
