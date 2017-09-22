@@ -1,4 +1,3 @@
-The email will contain a line constructed as can be seen below
-
+The email constructed by the program will contain the following information :
 
 Router IP Address on Thu 14 Sep 19:20:01 BST 2017 = 2.123.97.89
